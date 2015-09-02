@@ -39,14 +39,14 @@ ul {
 }
 
 /*
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * Address style set to `bolder` in Firefox, Safari, and Chrome.
  */
 strong {
   font-weight: bold;
 }
 
 /*
- * Remove inner padding and border in Firefox 4+.
+ * Remove inner padding and border in Firefox
  */
 ::-moz-focus-inner {
   padding: 0;
@@ -54,7 +54,7 @@ strong {
 }
 
 /*
- * 1. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 1. Address `overflow` set to `hidden` in IE 10/11.
  * 2. Improve consistency of cursor style
  */
 button {
@@ -66,7 +66,7 @@ button {
  * 1. For responsive web development, makes sure images respect the bounds
  *    of a fluid container. 
  * 2. The image's aspect ratio is preserved even if it has an inline height set.
- * 3. Fixes images within links gaining a border in IE 8, 9 and 10.
+ * 3. Fixes images within links gaining a border in IE 10.
  */
 img {
   max-width: 100%;
