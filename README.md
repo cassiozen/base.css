@@ -12,4 +12,4 @@ Finally, base.css applies the box-sizing property to make building CSS layouts e
 ### Install
 
 * [npm](http://npmjs.org/): `npm install --save base-css`
-* [Download](https://raw.githubusercontent.com/cassiozen/base.css/master/base.css).
+* [Download](https://github.com/cassiozen/base.css/zipball/master).
