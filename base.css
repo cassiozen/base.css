@@ -14,11 +14,11 @@ html {
 }
   
 /* 
- * Set default font family to sans-serif.
+ * Remove default margin and set default font family to sans-serif.
  */
 body {
   margin: 0;
-  font: 16px/1 sans-serif;
+  font: sans-serif;
 }
 
 /* 
