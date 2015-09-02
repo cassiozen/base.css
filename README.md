@@ -8,3 +8,8 @@ It was born as an alternative to reset.css, which simply stripped many html elem
 
 Base.css is different in three ways: It only targets modern browsers (IE 10+) and it does a little of both: Normalizing and resetting behaviour. It normalizes what is considered de facto behaviours that we rely and some browsers screw (like IE not resizing a button with a big text inside it - all other browsers does this). For elements that usually tend to have its defaults overwritten on new projects (like heading styles, for example), base.css simply applies a reset (which have a smaller footprint).
 Finally, base.css applies the box-sizing property to make building CSS layouts easier and a lot more intuitive. It's such a boon for developers that there's even an International Box-Sizing Awareness Day in February ;)
+
+### Install
+
+* [npm](http://npmjs.org/): `npm install --save base-css`
+* [Download](https://raw.githubusercontent.com/cassiozen/base.css/master/base.css).
