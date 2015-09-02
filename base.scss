@@ -1,0 +1,86 @@
+/* 
+ * Sass version of base.css.
+ */
+
+@mixin box-sizing($bs){
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    @include box-sizing(border-box);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    @include box-sizing(inherit);
+    &:before {
+        @include box-sizing(border-box);
+    }
+    &:after {
+        @include box-sizing(inherit);
+    }
+}
+
+/* 
+ * Remove default margin and set default font family to sans-serif.
+ */
+body {
+    margin: 0;
+    font: sans-serif;
+}
+
+/* 
+ * Strip margin and padding from core elements 
+ * (brings them to the same predictable blank slate of a div)
+ */
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Address style set to `bolder` in Firefox, Safari, and Chrome.
+ */
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Remove inner padding and border in Firefox
+ */
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*
+ * 1. Address `overflow` set to `hidden` in IE 10/11.
+ * 2. Improve consistency of cursor style
+ */
+button {
+    overflow: visible;
+    cursor: pointer;
+}
+
+/* 
+ * 1. For responsive web development, makes sure images respect the bounds
+ *    of a fluid container. 
+ * 2. The image's aspect ratio is preserved even if it has an inline height set.
+ * 3. Fixes images within links gaining a border in IE 10.
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
