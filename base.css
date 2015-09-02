@@ -53,6 +53,15 @@ strong {
   border: 0;
 }
 
+/*
+ * 1. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 2. Improve consistency of cursor style
+ */
+button {
+    overflow: visible;
+    cursor: pointer;
+}
+
 /* 
  * 1. For responsive web development, makes sure images respect the bounds
  *    of a fluid container. 
