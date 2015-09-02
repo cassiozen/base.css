@@ -1,5 +1,5 @@
 {
-  "name": "base.css",
+  "name": "base-css",
   "version": "1.0.0",
   "description": "A basic set of rules to make modern browsers behave.",
   "style": "base.css",
