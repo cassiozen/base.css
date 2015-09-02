@@ -1,14 +1,30 @@
-* {
-  box-sizing: border-box;
-}
+/* 
+ * 1. apply a natural box layout model to all elements, 
+ *    but allowing components to change 
+ * 2. Prevent iOS and IE text size adjust after device orientation
+ *    change, without disabling user zoom.
+ */
 html {
+  box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+/* 
+ * Set default font family to sans-serif.
+ */
 body {
   margin: 0;
   font: 16px/1 sans-serif;
 }
+
+/* 
+ * Strip margin and padding from core elements 
+ * (brings them to the same predictable blank slate of a div)
+ */
 h1,
 h2,
 h3,
@@ -21,20 +37,28 @@ ul {
   margin: 0;
   padding: 0;
 }
-main,
-li {
-  display: block;
-}
+
+/*
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
 strong {
   font-weight: bold;
 }
+
+/*
+ * Remove inner padding and border in Firefox 4+.
+ */
 ::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-:focus {
-  outline: 0;
-}
+
+/* 
+ * 1. For responsive web development, makes sure images respect the bounds
+ *    of a fluid container. 
+ * 2. The image's aspect ratio is preserved even if it has an inline height set.
+ * 3. Fixes images within links gaining a border in IE 8, 9 and 10.
+ */
 img {
   max-width: 100%;
   height: auto;
