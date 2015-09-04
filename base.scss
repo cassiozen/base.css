@@ -40,9 +40,12 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 blockquote,
 figure,
+dl,
 ol,
 ul {
   margin: 0;
@@ -83,4 +86,10 @@ img {
   max-width: 100%;
   height: auto;
   border: 0;
+}
+/* 
+ * Makes sure images respect the bounds of a fluid container. 
+ */
+svg {
+  max-width: 100%;
 }
